@@ -14,3 +14,11 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
+
+
+def power(a, b):
+    return a ** b
+
+
+def absolute(a):
+    return abs(a)

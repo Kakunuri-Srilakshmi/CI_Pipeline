@@ -1,5 +1,12 @@
 import pytest
-from app.calculator import add, subtract, multiply, divide
+from app.calculator import (
+    add,
+    subtract,
+    multiply,
+    divide,
+    power,
+    absolute,
+)
 
 
 def test_add():
@@ -21,3 +28,15 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(10, 0)
+
+
+def test_power():
+    assert power(2, 3) == 8
+
+
+def test_absolute_positive():
+    assert absolute(5) == 5
+
+
+def test_absolute_negative():
+    assert absolute(-5) == 5
