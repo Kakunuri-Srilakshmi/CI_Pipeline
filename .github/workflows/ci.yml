@@ -81,5 +81,5 @@ jobs:
 
     steps:
     - name: Deploy
-      run: echo "Deploying $APP_NAME 🚀"
+      run: echo "Deploying $APP_NAME "
       
